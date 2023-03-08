@@ -1,0 +1,74 @@
+body{
+    background: linear-gradient(-45deg, #b05de0, #1ee470, #d52323, #ffd817);
+    animation: gradient 1s ease infinite;
+    background-size: 400% 400%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+#wrapper{
+    font-family: 'Golos Text', sens-serif;
+    background: rgb(52, 46, 46);
+    font-size: 100px;
+    background-size: 400% 400%;
+    height: 101vh;
+    width: 101vw;
+    margin-left: -10px;
+    margin-top: -10px;
+    padding: auto;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#mufasaMain{
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    align-items: center;
+    align-content: stretch;
+    height: 100vh;
+    background-image: url(/img/224.gif);
+    animation: gradient 7s alternate infinite;
+}
+
+#todayIs{
+    text-align: center;
+    font-size: 300px;
+    font-family: 'Nabla', cursive;
+    top: 50%;
+    left: 50%;
+}
+
+.letter{
+    animation: waviy .5s infinite;
+    display: inline-block;
+    animation-delay: calc(.02s * var(--i));
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
