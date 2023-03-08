@@ -30,7 +30,7 @@ export default class App{
                 $('#mufasaMain').css('visibility', 'visible');
                 
                 var audio = $("<audio></audio>").attr({
-                    "src": "/audio/pushTheFeelingOn.mp3",
+                    "src": "audio/pushTheFeelingOn.mp3",
                     "loop": true
                   });
 
