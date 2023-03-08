@@ -33,7 +33,7 @@ body{
     align-items: center;
     align-content: stretch;
     height: 100vh;
-    background-image: url(/img/dance.GIF);
+    background-image: url(../img/dance.GIF);
     animation: gradient 7s alternate infinite;
 }
 
