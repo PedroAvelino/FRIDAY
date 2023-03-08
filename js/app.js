@@ -24,7 +24,7 @@ export default class App{
         const dayOfWeek = today.getDay();
 
         $('#wrapper').on('click', e => {
-            if( dayOfWeek == 3 )
+            if( dayOfWeek == 5 )
             {
                 $('#wrapper').remove();
                 $('#mufasaMain').css('visibility', 'visible');

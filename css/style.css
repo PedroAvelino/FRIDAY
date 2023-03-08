@@ -8,6 +8,9 @@ body{
 
 
 #wrapper{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
     font-family: 'Golos Text', sens-serif;
     background: rgb(52, 46, 46);
     font-size: 100px;
@@ -18,7 +21,6 @@ body{
     margin-top: -10px;
     padding: auto;
     border: none;
-    display: flex;
     justify-content: center;
     align-items: center;
     align-content: stretch;
@@ -26,7 +28,9 @@ body{
     cursor: pointer;
 }
 #mufasaMain{
+    text-align: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     visibility: hidden;
     align-items: center;
