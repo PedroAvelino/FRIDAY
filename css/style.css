@@ -33,7 +33,7 @@ body{
     align-items: center;
     align-content: stretch;
     height: 100vh;
-    background-image: url(img/224.gif);
+    background-image: url(./img/224.gif);
     animation: gradient 7s alternate infinite;
 }
 
