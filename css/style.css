@@ -1,4 +1,7 @@
 body{
+    overflow: hidden;
+}
+#rainbow{
     background: linear-gradient(-45deg, #b05de0, #1ee470, #d52323, #ffd817);
     animation: gradient 1s ease infinite;
     background-size: 400% 400%;
@@ -6,6 +9,11 @@ body{
     overflow: hidden;
 }
 
+#player{
+    align-items: center;
+    height: 100vh;
+    z-index: -100;
+}
 
 #wrapper{
     display: flex;
@@ -45,12 +53,14 @@ body{
     font-family: 'Nabla', cursive;
     top: 50%;
     left: 50%;
+    z-index: 100;
 }
 
 .letter{
     animation: waviy .5s infinite;
     display: inline-block;
     animation-delay: calc(.02s * var(--i));
+    z-index: 100;
 }
 
 
