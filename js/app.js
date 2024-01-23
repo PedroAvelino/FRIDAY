@@ -87,9 +87,9 @@ export default class App{
             {
                 $('#wrapper').remove();
                 
-                // this.openCoolSite();
+                this.openCoolSite();
 
-                this.openDanceSite();
+                //this.openDanceSite();
             }
             else
             {
