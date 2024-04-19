@@ -7,6 +7,17 @@ export default class App{
         //CSS stuff
         $('body').attr('id', 'rainbow');
         $('#mufasaMain').css('visibility', 'visible');
+
+        let mensagens = [
+            "GINGADO!!!",
+            "MESCLADASSO!!!",
+            "MUFASA!!!",
+            "SEXTA!!!",
+            "EITA!!!",
+            "BIRUTA!!!"
+        ]
+
+        let msgDoDaVez = this.getRandomElement(mensagens);
         
         
         let mainText = $('#todayIs');
@@ -16,10 +27,20 @@ export default class App{
         for (let i = 0; i < length; i++) {
             let copy = $('<span>');
             copy.text(cool[i]);
-            mainText.append(copy);
+            mainText.append(msgDoDaVez);
             copy.addClass('letter');
             copy.css('--i',i+1);
         }
+    }
+
+    getRandomElement(arr) {
+        // Get a random index from 0 to the length of the array - 1
+        const randomIndex = Math.floor(Math.random() * arr.length);
+        
+        // Use the random index to select a random element from the array
+        const randomElement = arr[randomIndex];
+        
+        return randomElement;
     }
 
     openDanceSite(){
@@ -88,6 +109,7 @@ export default class App{
                 $('#wrapper').remove();
                 
                 this.openCoolSite();
+                this.loadSongAndPlay("audio/pushTheFeelingOn.mp3")
 
                 //this.openDanceSite();
             }
