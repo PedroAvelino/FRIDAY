@@ -21,13 +21,13 @@ export default class App{
         
         
         let mainText = $('#todayIs');
-        let cool = "GINGADO!!!";
-        let length = cool.length;
+        //let cool = "GINGADO!!!";
+        let length = msgDoDaVez.length;
         
         for (let i = 0; i < length; i++) {
             let copy = $('<span>');
-            copy.text(cool[i]);
-            mainText.append(msgDoDaVez);
+            copy.text(msgDoDaVez[i]);
+            mainText.append(copy);
             copy.addClass('letter');
             copy.css('--i',i+1);
         }
